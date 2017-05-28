@@ -10,6 +10,7 @@
 
         .when("/index2", {
           templateUrl: "view/view2.html",
+          controller: "totalController"
           //controller 2
 
         }).otherwise({

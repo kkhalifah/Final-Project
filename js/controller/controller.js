@@ -16,7 +16,6 @@ console.log("controller is connected");
         console.log(result);
       }).then(function (result) {
       if (result === true) {
-        //change view
           // if true change view
         $location.path('/index2');
         //else clear screen
