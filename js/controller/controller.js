@@ -1,8 +1,8 @@
 var app = angular.module('swearApp');
-app.controller('initialController', function($scope, $http) {
+app.controller('initialController', function($scope, $http, $location) {
 console.log("controller is connected");
   // var words = "";
-  // var response = "";
+  var result = "";
     $scope.testWord = function(words) {
         $http({
         method: 'GET',
@@ -12,21 +12,21 @@ console.log("controller is connected");
           "Accept": "text/plain"
         }
       }).then(function(response){
-        if (response.data === true) {
-          //change view
-            // if true change view else clear screen
-          $location.path('/index2')
-
-        } else {}
-
-        console.log(response.data);
-      })
-
+        result = response.data;
+        console.log(result);
+      }).then(function (result) {
+      if (result === true) {
+        //change view
+          // if true change view
+        $location.path('/index2');
+        //else clear screen
+      } else {      }
 
 
 
     //   $scope.words = response.data
     //  console.log($scope.words);
     // }
+});
 }
 });
