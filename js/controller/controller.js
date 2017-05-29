@@ -18,9 +18,13 @@ console.log("controller is connected");
          if (result === 'true') {
              // if true change view
            $location.path('/index2');
-           //else clear screen
-         } else {      }
+           //else clear screen or alert box
+         } else  {
+               alert("Try another word!") &&
+                    //reset form input does not work yet
+               ($scope.result="");
 
+           }
 
     //   $scope.words = response.data
     //  console.log($scope.words);
