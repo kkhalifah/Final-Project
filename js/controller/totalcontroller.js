@@ -6,12 +6,8 @@ app.controller('totalController', function ($scope, $location, totalFactory){
   //how to target radio button elements
 
   var parents =""
-  $scope.parents = {
-    name: 'mom'
-  }
-    $scope.parent = {
-      name : "dad"
-    };
+    $scope.parent =  {  name: 'mom'}, {  name: "dad"  };
+// needs to store parent value on separate view 
 //no idea
     $scope.targetParents = function(parent) {
     totalFactory.setParent($scope.parent).then(function() {
