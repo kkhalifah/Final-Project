@@ -2,18 +2,25 @@
 var app = angular.module("swearApp");
 //needs to be connected
 app.factory('totalFactory', function(){
-//write a method.
+//write a method.with a return
+// psuedo code idea one to test
+var inputs = "aword";
+return {
+  setInput:  function (input){
+    if (word === true) {
+// not logging
+      console.log('increment by 1');}
+    }
+  }
 
-// var logTheConsole = function methodName () {
-     console.log("hi from factory");
+
+//not logging, but logs if i remove return statement and has error
+//var logTheConsole = function logTheConsole () {
+     console.log("hi from factory")
 // }
 
+});
 
-  //  this.logTheConsol = function(){ do stuff }
-  // scope not defined here
-  //  $scope.backButton = function (){
-  //    $location.path('/index')
-  //  }
 
 //take info from view 1 and display on page two from submit button
 //display which radio button is chosen to console
@@ -21,23 +28,4 @@ app.factory('totalFactory', function(){
 //log count of times true is used
 //display to page using ng-expression
 
-
-
-
-
 //display image to change depending on value
-
-// psuedo code idea one
-// var input = "aword";
-// return {
-//   setInput:  function (word){
-//     if (word === true) {
-//       input = increment 1;
-//       console.log(increment by 1);}
-//     else (word === false){
-//       return increment 0
-//       retutn nothing}},
-//   getInput: function (totalWordsConsoled) {
-//     console.log(totalWordsConsoled);
-//     return currency amount}}
-});

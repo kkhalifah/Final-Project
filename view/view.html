@@ -2,16 +2,23 @@
   <h1>logo here and title</h1>
 </div>
 
-<div class="">
+<div class="radio">
+  <form class="" name = "theForm" ng-controller = "totalController">
   <!-- styling will be the same for both views -->
-  <label><input type="radio" ng-model="parent" value="mom" checked/>Mom</label>
-    <label><input type="radio" ng-model="parent" value="dad" />Dad</label>
+  <div>
+
+  <label><input type="radio" ng-model="parent.name" value="mom" />Mom</label>
+    <label><input type="radio" ng-model="parent.name" value="dad" />Dad</label>
   <!-- type = password add in later -->
   Swear: <input type="text" name="password" value="" ng-model="words">
+  </form>
   <!-- button will need to change the view -->
+
+    <tt>Parent = {{parent.name}}</tt><br/>
 
   <button type="submit" name="submit" ng-click = "testWord(words)">Submit Test</button>
     <!-- display will go on view2 ng-repeat=word in words -->
         <p>log who said true statement</p>
         <p>totals on view two</p>
+
       </div>

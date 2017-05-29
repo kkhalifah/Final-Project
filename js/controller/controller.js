@@ -2,6 +2,8 @@ var app = angular.module('swearApp');
 app.controller('initialController', function($scope, $http, $location) {
 console.log("controller is connected");
   //var words = "";
+  $scope.parent = {  name: 'mom'}, {  name: "dad"  };
+
   var result = "";
     $scope.testWord = function(words) {
         $http({
