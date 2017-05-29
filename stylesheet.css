@@ -1,8 +1,14 @@
 .jar {
   float: right;
-  margin-right: 200px;
-  width: 100px;
+  margin-right: 80px;
+  width: 200px;
   height: 300px;
   background-color: #f7ff60;
   margin-top: -100px;
+}
+
+.jarOne {
+  width: 250px;
+  /*float: right;*/
+
 }
