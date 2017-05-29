@@ -1,10 +1,14 @@
 
 var app = angular.module('swearApp');
 //probably don't need http for this Ctlr
-app.controller('totalController', function ($scope, $location){
+app.controller('totalController', function ($scope, $location, totalFactory){
+
   console.log("total controller is connected");
 
-
+  //it works!nto anymore, bring into service?
+  $scope.backButton = function (){
+    $location.path('/index')
+  }
 //log total true statements on this page
 //scope values from view one here {{totals}}
 //  var booleans = ['true', 'false'];
@@ -14,10 +18,7 @@ app.controller('totalController', function ($scope, $location){
 
   //  console.log($scope.boolean);
 //  }
-  //it works!
-  $scope.backButton = function (){
-    $location.path('/index')
-  }
+
 
 //psuedo code
   // var results = "";

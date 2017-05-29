@@ -2,7 +2,18 @@
 var app = angular.module("swearApp");
 //needs to be connected
 app.factory('totalFactory', function(){
-  console.log("hi factory");
+//write a method.
+
+// var logTheConsole = function methodName () {
+     console.log("hi from factory");
+// }
+
+
+  //  this.logTheConsol = function(){ do stuff }
+  // scope not defined here
+  //  $scope.backButton = function (){
+  //    $location.path('/index')
+  //  }
 
 //take info from view 1 and display on page two from submit button
 //display which radio button is chosen to console
