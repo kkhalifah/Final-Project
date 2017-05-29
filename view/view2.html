@@ -16,24 +16,26 @@
     <option value="Mom">Mom</option>
     <option value="Dad">Dad</option>
   </select> <br> -->
-  <label><input type="radio" ng-model="parent" value="mom" checked/>Mom</label>
-    <label><input type="radio" ng-model="parent" value="dad" />Dad</label>
+  <!-- <label><input type="radio" ng-model="parent" value="mom" checked/>Mom</label>
+    <label><input type="radio" ng-model="parent" value="dad" />Dad</label> -->
   <!-- ng-model="totalCount" -->
-  <input type="text" ng-model="boolean">
+  <!-- <input type="text" ng-model="boolean"> -->
   <!-- ng-click="something()" -->
-  <button type="submit" name="submit" ng-click "testForTrue(boolean)">Submit to Calculate total times said</button>
+  <!-- <button type="submit" name="submit" ng-click "testForTrue(boolean)">Submit to Calculate total times said</button> -->
 
   <!-- <h2 ng-repeat = "boolean in booleans"> {{boolean}}</h2> -->
-  <h2>Total Amount:True has been said {{numtotal +1}} times</h2>
+  <h2>Total Amount:<br>
+    Mom's total: $ numtotal + {{numtotal +1}} <br>
+    Dad's total: $ numtotal +{{numtotal +1}}
+  </h2>
   <!-- JS to calculate and angualr partial to show view -->
-<!-- stretch goals -->
+
 <div class="">
   <button type="submit" name="submit" ng-click = "backButton()">Back</button>
 <form action="https://detroit.curbed.com/maps/things-to-do-detroit-kids" target="_blank">
     <input type="submit" value="Spend It!" />
 </form>
-
+  <!-- stretch goals -->
   <!-- <button type="button" name="button">stretch goal API map</button> -->
-</div>
-
+  </div>
 </div>
