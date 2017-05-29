@@ -24,11 +24,7 @@ console.log("controller is connected");
                     //reset form input does not work yet
                ($scope.result="");
 
-           }
-
-    //   $scope.words = response.data
-    //  console.log($scope.words);
-    // }
-});
-}
+             }
+         });
+       }
 });

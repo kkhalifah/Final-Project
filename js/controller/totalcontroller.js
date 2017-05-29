@@ -10,7 +10,10 @@ app.controller('totalController', function ($scope, $location){
   $scope.testForTrue = function (boolean){
 
     console.log($scope.boolean);
-
+  }
+  //it works!
+  $scope.backButton = function (){
+    $location.path('/index')
   }
 
 //psuedo code
