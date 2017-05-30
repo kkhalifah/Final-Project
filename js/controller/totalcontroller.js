@@ -1,36 +1,31 @@
 
 var app = angular.module('swearApp');
-//probably don't need http for this Ctlr
+
 app.controller('totalController', function ($scope, $location, totalFactory){
 //  console.log("total controller is connected");
 
       $scope.parents = totalFactory.getInput();
       // console.log($scope.facts);
 
-  //it works!is factory connected
+
+  //it works!
   $scope.backButton = function (){
     $location.path('/index')
   }
-//log total true statements on this page
-//scope values from view one here {{totals}}
-//  var booleans = ['true', 'false'];
-  //word count plus 1
-//  var numtotal = ;
-//  $scope.testForTrue = function (boolean){
-  //  console.log($scope.boolean);
-//  }
-//psuedo code factory?
-  // var results = "";
-  // $scope.testForTrue = function(results){
-  //   if (results === true) {
-  //     add 1 to the total count
-  //     console.log(num + "words are true");
-  //   } else (results === false) {
-  //       return no number added
-  //     console.log("word is false");
-  //
-  //   }
-  //
-  // };
-
+//dymanic image stuff here
+//display image to change depending on value-stretch
+// psuedo code
+// $scope.filledJar = function (){
+//   if (numtotal >= 2){
+//     return image src='empty.png';
+//   } else if (numtotal >= 4) {
+//     return image  src='fillupjar1.png';
+//   } else if (numtotal >= 6) {
+//     return image  src='fillupjar2.png';
+//   } else if (numtotal >= 8) {
+//       return image  src='fillupjar3.png';
+//   } else {
+//     return image  src='fillupjar4.png';
+//   }
+// }
 });

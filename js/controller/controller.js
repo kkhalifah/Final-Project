@@ -3,15 +3,11 @@ var app = angular.module('swearApp');
 app.controller('initialController', function($scope, $http, $location, totalFactory) {
 //console.log("controller is connected");
 
-//how to target radio button elements
-
-// needs to store parent value on separate view
-//no idea- this does nothing, just a thought
   var result = "";
-  var userchoice = '';
+  var parentName = '';
     $scope.testWord = function(words, name) {
     //  console.log(name);
-      userchoice = name;
+      parentName = name;
   //    words = $scope.parent.words
         $http({
         method: 'GET',
@@ -26,16 +22,16 @@ app.controller('initialController', function($scope, $http, $location, totalFact
          }).then(function () {
          if (result === 'true') {
              // if true change view
-             console.log(userchoice);
-             totalFactory.setInput(userchoice)
+             console.log(parentName);
+             totalFactory.setInput(parentName)
            $location.path('/index2');
            //else clear screen or alert box
          } else  {
-               alert("Try another word!") &&
+               alert("Try another word!")
                     //reset form input does not work yet
-               ($scope.result="");
 
              }
+              $scope.words = "";
          });
        }
 });
