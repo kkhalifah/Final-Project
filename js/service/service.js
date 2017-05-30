@@ -14,16 +14,18 @@ return {
     if (parent.name === 'mom') {
 // not logging
        parents.mom++
+       //not targeting mom
        console.log(parents);
        return parents
 
     }
     else {
         parents.dad++
+// only logging dad
          console.log(parents);
         return parents
       }
-    }, 
+    },
     //store values send to second
       getInput: function () {
       return parents

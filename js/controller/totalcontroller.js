@@ -2,9 +2,7 @@
 var app = angular.module('swearApp');
 //probably don't need http for this Ctlr
 app.controller('totalController', function ($scope, $location, totalFactory){
-  console.log("total controller is connected");
-
-
+//  console.log("total controller is connected");
 
       $scope.parents = totalFactory.getInput();
       // console.log($scope.facts);

@@ -1,7 +1,7 @@
 
 var app = angular.module('swearApp');
 app.controller('initialController', function($scope, $http, $location, totalFactory) {
-console.log("controller is connected");
+//console.log("controller is connected");
 
 //how to target radio button elements
 
@@ -10,7 +10,7 @@ console.log("controller is connected");
   var result = "";
   var userchoice = '';
     $scope.testWord = function(words, name) {
-      console.log(name);
+    //  console.log(name);
       userchoice = name;
   //    words = $scope.parent.words
         $http({
