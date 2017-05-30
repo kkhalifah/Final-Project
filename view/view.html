@@ -1,14 +1,13 @@
-<div class="">
-</div>
 
-<div class="">
+
+<div class="container2">
   <form class="" name = "theForm" ng-controller = "totalController">
   <!-- styling will be the same for both views -->
   <div class="radioInputs">
 
   <label><input type="radio" ng-model="parent.name" value="mom"  />Mom</label>
     <label><input type="radio" ng-model="parent.name" value="dad" checked />Dad</label>
-    <tt>Parent = {{parent.name}}</tt><br/>
+  <br>  <h2>Parent = {{parent.name}}</h2><br/>
   <!-- type = password add in later -->
   Swear: <input type="text" name="password" value="" ng-model="words">
   </form>
