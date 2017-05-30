@@ -29,7 +29,7 @@ app.controller('initialController', function($scope, $http, $location, totalFact
          } else  {
                alert("Try another word!")
                     //reset form input does not work yet
-
+            
              }
               $scope.words = "";
          });

@@ -12,9 +12,7 @@ var parents = {
 return {
   setInput:  function (name){
     if (name === 'mom') {
-// not logging
        parents.mom++
-       //not targeting mom
        console.log(parents);
        return parents
     }
@@ -25,7 +23,7 @@ return {
         return parents
       }
     },
-    //store values send to second
+    //store values send to second page
       getInput: function () {
       return parents
     }
