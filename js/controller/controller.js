@@ -1,10 +1,18 @@
-var app = angular.module('swearApp');
-app.controller('initialController', function($scope, $http, $location) {
-console.log("controller is connected");
-  //var words = "";
 
+var app = angular.module('swearApp');
+app.controller('initialController', function($scope, $http, $location, totalFactory) {
+console.log("controller is connected");
+
+//how to target radio button elements
+
+// needs to store parent value on separate view
+//no idea- this does nothing, just a thought
   var result = "";
-    $scope.testWord = function(words) {
+  var userchoice = '';
+    $scope.testWord = function(words, name) {
+      console.log(name);
+      userchoice = name;
+  //    words = $scope.parent.words
         $http({
         method: 'GET',
         url: 'https://community-purgomalum.p.mashape.com/containsprofanity?text=' + words,
@@ -18,6 +26,8 @@ console.log("controller is connected");
          }).then(function () {
          if (result === 'true') {
              // if true change view
+             console.log(userchoice);
+             totalFactory.setInput(userchoice)
            $location.path('/index2');
            //else clear screen or alert box
          } else  {

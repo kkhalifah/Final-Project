@@ -9,14 +9,12 @@
   <!-- ng-model="totalCount" -->
   <!-- <h2 ng-repeat = "total in totals"> {{total}}</h2> -->
 
-  <!-- set to default  not stored from page -->
-    <h2>Parent = {{parent.name}}</h2><br/>
-  <h2>Total Amount:<br>
-    Mom's total: $  + {{numtotal +1}} <br>
-    Dad's total: $  +{{numtotal +1}}
-  </h2>
-  <!-- JS to calculate and angualr partial to show view -->
 
+  <h2>Total Amount:  </h2>
+  <h2 class="tot">Mom's total: $  + {{parents.mom}} <br>
+  Dad's total: $  +{{parents.dad}}</h2>
+
+  <!-- JS to calculate and angualr partial to show view -->
   <button type="submit" name="submit" ng-click = "backButton()">Back</button>
 <form action="https://detroit.curbed.com/maps/things-to-do-detroit-kids" target="_blank">
     <input type="submit" value="Spend It!" />

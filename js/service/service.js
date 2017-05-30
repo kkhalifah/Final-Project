@@ -6,14 +6,30 @@ app.factory('totalFactory', function(){
 //store which radio button is chosen
 //log count of times true is used
 // psuedo code gets rid of errors
-var inputs = "aword";
+var parents = {
+  mom: 0, dad:0
+}
 return {
-  setInput:  function (input){
-    if (word === true) {
+  setInput:  function (parent){
+    if (parent.name === 'mom') {
 // not logging
-      console.log('increment by 1');}
+       parents.mom++
+       console.log(parents);
+       return parents
+
+    }
+    else {
+        parents.dad++
+         console.log(parents);
+        return parents
+      }
+    }, 
+    //store values send to second
+      getInput: function () {
+      return parents
     }
   }
+
 
 //not logging, but logs if i remove return statement and has error
 //var logTheConsole = function logTheConsole () {

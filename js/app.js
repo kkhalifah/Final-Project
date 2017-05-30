@@ -1,4 +1,5 @@
   (function() { // <-- It's an IIFE
+//  add 'ui.bootstrap'
   var app = angular.module("swearApp", ["ngRoute"]);
 
       app.config(function($routeProvider){

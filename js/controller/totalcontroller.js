@@ -3,17 +3,12 @@ var app = angular.module('swearApp');
 //probably don't need http for this Ctlr
 app.controller('totalController', function ($scope, $location, totalFactory){
   console.log("total controller is connected");
-  //how to target radio button elements
-    $scope.parent =  {  name: 'mom'}, {  name: "dad"  };
-// needs to store parent value on separate view
-//no idea- this does nothing, just a thought
-    var parents =""
-    $scope.targetParents = function(parent) {
-    totalFactory.setParent($scope.parent).then(function() {
-      $scope.parents = totalFactory.getParents();
+
+
+
+      $scope.parents = totalFactory.getInput();
       // console.log($scope.facts);
-    })
-  }
+
   //it works!is factory connected
   $scope.backButton = function (){
     $location.path('/index')

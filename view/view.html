@@ -5,15 +5,15 @@
   <!-- styling will be the same for both views -->
   <div class="radioInputs">
 
-  <label><input type="radio" ng-model="parent.name" value="mom"  />Mom</label>
-    <label><input type="radio" ng-model="parent.name" value="dad" checked />Dad</label>
-  <br>  <h2>Parent = {{parent.name}}</h2><br/>
+  <label><input type="radio" ng-model="name" value="mom"  />Mom</label>
+    <label><input type="radio" ng-model="name" value="dad" />Dad</label>
+  <br>  <h2>Parent = {{name}}</h2>
   <!-- type = password add in later -->
-  Swear: <input type="text" name="password" value="" ng-model="words">
+  Swear: <input type="text" name="password" value="" ng-model="parent.words">
   </form>
   <!-- button will need to change the view -->
 
-  <button type="submit" name="submit" ng-click = "testWord(words)">Submit Test</button>
+  <button class="" type="submit" name="submit" ng-click = "testWord(parent.words, name)">Submit Test</button>
     <!-- display will go on view2 ng-repeat=word in words -->
         <p>log who said true statement</p>
         <p>totals on view two</p>
