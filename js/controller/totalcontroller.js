@@ -4,18 +4,17 @@ var app = angular.module('swearApp');
 app.controller('totalController', function ($scope, $location, totalFactory){
   console.log("total controller is connected");
   //how to target radio button elements
-
-  var parents =""
     $scope.parent =  {  name: 'mom'}, {  name: "dad"  };
-// needs to store parent value on separate view 
-//no idea
+// needs to store parent value on separate view
+//no idea- this does nothing, just a thought
+    var parents =""
     $scope.targetParents = function(parent) {
     totalFactory.setParent($scope.parent).then(function() {
       $scope.parents = totalFactory.getParents();
       // console.log($scope.facts);
     })
   }
-  //it works!nto anymore, bring into service?
+  //it works!is factory connected
   $scope.backButton = function (){
     $location.path('/index')
   }
@@ -25,12 +24,9 @@ app.controller('totalController', function ($scope, $location, totalFactory){
   //word count plus 1
 //  var numtotal = ;
 //  $scope.testForTrue = function (boolean){
-
   //  console.log($scope.boolean);
 //  }
-
-
-//psuedo code
+//psuedo code factory?
   // var results = "";
   // $scope.testForTrue = function(results){
   //   if (results === true) {
@@ -43,6 +39,5 @@ app.controller('totalController', function ($scope, $location, totalFactory){
   //   }
   //
   // };
-
 
 });
