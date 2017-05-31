@@ -7,7 +7,7 @@ app.controller('totalController', function ($scope, $location, totalFactory){
       var total = $scope.parents.dad + $scope.parents.mom;
       console.log(total);
       $scope.pickJarImage = function (){
-
+        
         console.log(total);
         if (total===0){
           $scope.jar= 'images/jar/empty.png';

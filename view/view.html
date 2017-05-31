@@ -5,14 +5,18 @@
   <!-- styling will be the same for both views -->
   <div class="radioInputs">
 
-  <label><input class='rents' type="radio" ng-model="name" value="mom" /> Mom</label>
+  <label><input class='rents' type="radio" ng-model="name" value="mom"/> Mom</label>
     <label><input class='rents' type="radio" ng-model="name" value="dad" />Dad</label> <br>
 
   <!-- type = password add in later -->
-  <h2>Swear:</h2> <input type="password" name="password" value="" ng-model="words">
+  <h2>Swear:</h2> <input class='wordInput' type="password" name="password" value="" ng-model="words">
   </form>
 
   <button class="" type="submit" name="submit" ng-click = "testWord(words, name)">Submit Test</button>
 
       </div>
+      </div>
+      <div class="atags">
+        <a href="#!/index">Click for Main</a>
+        <a href="#!/index2">Click for View2</a>
       </div>

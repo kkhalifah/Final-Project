@@ -16,6 +16,7 @@ body  {
       -moz-box-shadow: 3px 5px 8px  #282c33;
            box-shadow: 3px 5px 8px  #282c33;
 }
+
 .logoBanner {
   width: 95%;
 }
@@ -27,19 +28,27 @@ body  {
 .container2 {
   margin-top: 50px;
 }
+
 h2 {
   font-family: 'Kalam', cursive;
   font-weight: 700;
 }
+
 .tot {
   font-family: 'Kalam', cursive;
   font-weight: 400;
 }
 
-.rents {
+label {
   font-family: 'Kalam', cursive;
   font-weight: 400;
 }
+
+.wordInput {
+  padding: 6px;
+  border-radius: 5px;
+}
+
 button {
   padding: 9px;
   border-radius: 8px;
@@ -55,11 +64,11 @@ background: -webkit-linear-gradient(top, #fceabb 0%,#fccd4d 18%,#f8b500 59%,#fbd
 background: linear-gradient(to bottom, #fceabb 0%,#fccd4d 18%,#f8b500 59%,#fbdf93 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 );
 }
+
 form {
   display: inline-block;
   margin-left: 10px;
 }
-
 
 .jar {
   float: right;
@@ -67,11 +76,34 @@ form {
   width: 200px;
   height: 300px;
   /*background-color: #f7ff60;*/
-
 }
 
 .jarOne {
   width: 250px;
   /*float: right;*/
+}
+.atags {
+  /*margin-left: 100px;
+  margin-top: -80px;*/
+  font-family: 'Lato', sans-serif;
+  font-style: 700;
+}
+a:link {
+    color: #29ABE2;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
 
+}
+/* visited link */
+a:visited {
+    color: #1f81a3;
+}
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+/* selected link */
+a:active {
+    color: blue;
 }
