@@ -12,10 +12,9 @@ $scope.retrieveFacts = function(category) {
 }
       $scope.parents = totalFactory.getInput();
       // console.log($scope.facts);
-    //  var total = parents.dad + parents.mom;
-      var total = 2;
+      var total = $scope.parents.dad + $scope.parents.mom;
       console.log(total);
-      $scope.total = function (){
+      $scope.pickJarImage = function (){
 
         console.log(total);
         if (total===0){
@@ -30,7 +29,7 @@ $scope.retrieveFacts = function(category) {
           $scope.jar= 'images/jar/fillupjar4.png';
         }
       }
-      $scope.total();
+      $scope.pickJarImage();
 
   //it works!
   $scope.backButton = function (){
