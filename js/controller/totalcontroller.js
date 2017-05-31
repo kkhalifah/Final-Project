@@ -1,15 +1,7 @@
-
 var app = angular.module('swearApp');
 
 app.controller('totalController', function ($scope, $location, totalFactory){
 //  console.log("total controller is connected");
-
-$scope.retrieveFacts = function(category) {
-  factsFactory.setFacts($scope.category).then(function() {
-    $scope.facts = factsFactory.getFacts();
-    // console.log($scope.facts);
-  })
-}
       $scope.parents = totalFactory.getInput();
       // console.log($scope.facts);
       var total = $scope.parents.dad + $scope.parents.mom;
@@ -35,8 +27,5 @@ $scope.retrieveFacts = function(category) {
   $scope.backButton = function (){
     $location.path('/index')
   }
-//dymanic image stuff here
-//display image to change depending on value-stretch
-// psuedo code
 
 });

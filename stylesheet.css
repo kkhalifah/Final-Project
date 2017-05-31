@@ -1,10 +1,12 @@
 body  {
   background-image: url(images/background/background.jpg);
   width: 90%;
+  margin: 0 auto ;
 }
 
 #main {
    background: rgba(255, 255, 255, 0.6);
+   /*margin: 0 auto ;*/
    width: 60%;
    height: 525px;
    border-radius: 20px;
@@ -33,6 +35,31 @@ h2 {
   font-family: 'Kalam', cursive;
   font-weight: 400;
 }
+
+.rents {
+  font-family: 'Kalam', cursive;
+  font-weight: 400;
+}
+button {
+  padding: 9px;
+  border-radius: 8px;
+  border-style: groove;
+  color: #242426;
+  /*font-family: Helvetica, sans-serif;*/
+  font-family: 'Kalam', cursive;
+  font-weight: 700;
+  font-size: 14px;
+  background: #fceabb;
+background: -moz-linear-gradient(top, #fceabb 0%, #fccd4d 18%, #f8b500 59%, #fbdf93 100%);
+background: -webkit-linear-gradient(top, #fceabb 0%,#fccd4d 18%,#f8b500 59%,#fbdf93 100%);
+background: linear-gradient(to bottom, #fceabb 0%,#fccd4d 18%,#f8b500 59%,#fbdf93 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 );
+}
+form {
+  display: inline-block;
+  margin-left: 10px;
+}
+
 
 .jar {
   float: right;
