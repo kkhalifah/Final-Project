@@ -15,7 +15,7 @@
           //controller 2
 
         }).otherwise({
-          // template: '<img src="images/spider.jpg" alt="spider">'
+          
         })
 
       });

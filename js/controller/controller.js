@@ -27,7 +27,7 @@ app.controller('initialController', function($scope, $http, $location, totalFact
            $location.path('/index2');
            //else clear screen or alert box
          } else  {
-               alert("Try another word!")
+               alert("Word is too good!")
                     //reset form input does not work yet
              }
               $scope.words = "";
