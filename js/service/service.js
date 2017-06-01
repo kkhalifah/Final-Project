@@ -3,8 +3,9 @@ var app = angular.module("swearApp");
 //needs to be connected
 app.factory('totalFactory', function(){
 //take info from view 1 and display on page two from submit button
-
+//storing the value
 var parents = {
+//object   two properties
   mom: 0, dad:0
 }
 //method  name=ng-model set input value from radio btn to mom or dad

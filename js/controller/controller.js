@@ -25,12 +25,12 @@ app.controller('initialController', function($scope, $http, $location, totalFact
          if (result === 'true') {
              // if true change view
              console.log(parentName);
-// parentName=parameter talk to service calling method name of parent 
+// parentName=parameter talk to service calling method name of parent
              totalFactory.setInput(parentName)
            $location.path('/index2');
            //false else clear screen or alert box
          } else  {
-               alert("Word is too good!")
+               alert("The Word is Too Good!")
              }
             //  $scope.words = "";
          });

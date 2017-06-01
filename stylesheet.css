@@ -1,14 +1,13 @@
 body  {
   background-image: url(images/background/background.jpg);
   width: 90%;
-  /*0 top and bottom auto centering sides*/
   margin: 0 auto ;
 }
 
 #main {
    background: rgba(255, 255, 255, 0.6);
    /*margin: 0 auto ;*/
-   width: 60%;
+   width: 55%;
    height: 550px;
    border-radius: 20px;
    /*padding: 40px;
@@ -22,7 +21,7 @@ body  {
 }
 
 .logoBanner {
-  margin-top: 2%;
+  margin-top: 3%;
   width: 95%;
 }
 
@@ -37,6 +36,8 @@ body  {
 h2 {
   font-family: 'Kalam', cursive;
   font-weight: 700;
+  font-size: 30px;
+  margin-left: 10px;
 }
 
 .tot {
@@ -56,9 +57,16 @@ label {
 .wordInput {
   padding: 6px;
   border-radius: 5px;
+  margin-right: 10px;
 }
+
+a {
+  text-decoration: none !important;
+
+}
+
 .linkButton {
-  text-decoration: none;
+  margin-top: 20px;
 }
 
 button {
@@ -74,7 +82,7 @@ button {
 background: -moz-linear-gradient(top, #fceabb 0%, #fccd4d 18%, #f8b500 59%, #fbdf93 100%);
 background: -webkit-linear-gradient(top, #fceabb 0%,#fccd4d 18%,#f8b500 59%,#fbdf93 100%);
 background: linear-gradient(to bottom, #fceabb 0%,#fccd4d 18%,#f8b500 59%,#fbdf93 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 );
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=0 );
 }
 
 form {
@@ -84,7 +92,7 @@ form {
 
 .jar {
   float: right;
-  margin-right: 100px;
+  margin-right: 80px;
   margin-top: -20px;
   width: 200px;
   height: 250px;

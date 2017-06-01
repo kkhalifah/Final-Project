@@ -4,9 +4,10 @@ var app = angular.module('swearApp');
 app.controller('totalController', function ($scope, $location, totalFactory){
 //  console.log("total controller is connected");
 // $scope MODEL of MVC (one instance)
-//  getInput  info from service
+//  getInput  getting info/ parents object  from service
       $scope.parents = totalFactory.getInput();
       // console.log($scope.facts);
+      //current number from service
       var total = $scope.parents.dad + $scope.parents.mom;
       console.log(total);
       $scope.pickJarImage = function (){
