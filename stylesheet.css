@@ -1,6 +1,7 @@
 body  {
   background-image: url(images/background/background.jpg);
   width: 90%;
+  /*0 top and bottom auto centering sides*/
   margin: 0 auto ;
 }
 

@@ -1,13 +1,13 @@
-//to be set up at some point
+//Set
 var app = angular.module("swearApp");
 //needs to be connected
 app.factory('totalFactory', function(){
 //take info from view 1 and display on page two from submit button
-//var promise =?
+
 var parents = {
   mom: 0, dad:0
 }
-
+//method  name=ng-model set input value from radio btn to mom or dad
 return {
   setInput:  function (name){
     if (name === 'mom') {
@@ -22,11 +22,12 @@ return {
         return parents
       }
     },
-    //method tobstore values send to second page
+    //method to store values sent to second page
+    //totalController
       getInput: function () {
       return parents;
     }
-    //  return promise;
+
   }
 
 });

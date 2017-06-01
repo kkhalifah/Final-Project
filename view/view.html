@@ -1,21 +1,20 @@
-
+<!-- MVC= view -->
 <div class="container2">
   <form class="" name = "theForm" ng-controller = "totalController">
-  <!-- styling will be the same for both views -->
-  <div class="radioInputs">
 
+  <div class="radioInputs">
+<!-- ngModel directive binds an input to a property on the scope using NgModelController  -->
   <label><input class='rents' type="radio" ng-model="name" value="mom"/> Mom</label>
     <label><input class='rents' type="radio" ng-model="name" value="dad" />Dad</label> <br>
 
-  <!-- type = password add in later -->
   <h2>You Said WH@+!:</h2> <input class='wordInput' type="password" name="password" value="" ng-model="words">
   </form>
-
+<!-- words=swear word input , name =parents  -->
   <button class="" type="submit" name="submit" ng-click = "testWord(words, name)">Test It!</button>
-
+<!-- ng-click custom behavior test validity of word when clicked -->
       </div>
       </div>
-  
+<!-- changes view anchor tag  -->
       <div class="linkButton">
         <button><a href="#!/index2">Money Money Money!</a></button>
         <!-- <a href="#!/index">Click for Main</a>
